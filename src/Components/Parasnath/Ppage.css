@@ -1,0 +1,98 @@
+.ttl {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #ffdb15;
+}
+
+.book {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 528px;
+    height: 656px;
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.book::-webkit-scrollbar {
+    width: 10px;
+}
+ .book::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+ .book::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+ .book::-webkit-scrollbar-thumb:hover {
+    background: rgba(2, 3, 1, 0.8);
+}
+ .book .page {
+    width: 99%;
+    padding: 25px;
+    background-color: #fff;
+    position: relative;
+}
+ .book .page h1,  .book .page h2,  .book .page p {
+    margin: 0;
+}
+ .book .page.frontcover {
+    background-color: #ffdb15;
+    color: #020301;
+    height: 606px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc4NjAyMTgyMjM5NTYx/fb-victorian-women-2.jpg);
+    background-size: 140%;
+    background-position: 50% 4%;
+    background-blend-mode: overlay;
+}
+ .book .page.frontcover > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .book .page.frontcover > div h1 {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+    position: relative;
+}
+ .book .page.frontcover > div h2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    position: relative;
+}
+ .book .page.frontcover > div h2:before {
+    content: "";
+    position: absolute;
+    left: -10%;
+    right: -10%;
+    top: -15px;
+    height: 1px;
+    background-color: rgba(2, 3, 1, 0.3);
+}
+ .book .page h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+ .book .page p {
+    display: block;
+    color: black;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+ .book .page p:nth-child(2)::first-letter {
+    font-size: 1.5rem;
+    font-weight: 600;
+}

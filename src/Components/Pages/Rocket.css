@@ -1,0 +1,50 @@
+
+
+/*rocket Slider design */
+
+.carousel {
+  
+  display: flex;
+  gap: .7em;
+  padding: 8px; 
+  
+/* adds scrolling for the element: */
+  overflow-x: scroll;
+/* removes the horizontal scrollbar: */
+  scrollbar-width: none;
+}
+
+.carousel--item {
+/* carousel item should have min-width declared: */
+  min-width: 360px;
+/* carousel item should have defined height: */
+  /* height: 540px; */
+  
+  border-radius: .4em;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.85;
+  transition: 300ms ease;
+  margin: 2rem;
+}
+
+.carousel--item:hover {
+  opacity: 1;
+  scale: 1.01;
+  transform-origin: bottom;
+}
+
+.carousel--item:focus-visible {
+  opacity: 1;
+  scale: 1.01;
+  transform-origin: bottom;
+  outline: 2px solid orange;
+  outline-offset: 2px;
+}
+
+
+
+/*rocket Slider design */
+
+
+

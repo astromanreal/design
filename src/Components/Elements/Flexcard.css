@@ -1,0 +1,78 @@
+.flex-card-section h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+.flex-card-container{
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    padding: 2em 0em;
+
+}
+.flex-card-item{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    background: rgb(62, 134, 108);
+    text-align: center;
+    border-radius: 9px;
+    padding: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    transition: all 0.4s ease-in-out;
+}
+.flex-card-item h1{
+    padding: 15px 0px;
+}
+.flex-card-item p{
+    font-size: 14px;
+    padding: 9px;
+  
+}
+.flex-card-item button{
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.flex-card-item:hover{
+    background: rgb(27, 103, 74);
+    transform: scale(1.06);
+}
+.flex-card-item:hover h1, .flex-card-item:hover p{
+    color: white;
+}
+.flex-card-item button:hover{
+    background: white;
+    color: rgb(78, 78, 240);
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    .flex-card-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .flex-card-item{
+        margin: 10px;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 750px) {
+    .flex-card-item{
+        flex-basis: 48%;
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+    .flex-card-item{
+        flex-basis: 33%;
+        justify-content: space-around;
+    }
+}

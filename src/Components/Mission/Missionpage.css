@@ -1,0 +1,104 @@
+.conveytabs {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 35px;
+  margin: 3rem auto;
+  background: #000000;
+}
+.conveytabs section {
+  display: none;
+  padding: 15px 0 0;
+  border-top: 1px solid #8e44ad;
+}
+.conveytabs h2 {
+  color: #8e44ad;
+  text-align: left;
+}
+.conveytabs section p {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px 0;
+  text-align: left;
+}
+.conveytabs section img {
+  width: 100%;
+  height: auto;
+}
+.conveytabs section ifram {
+  width: 100%;
+  height: auto;
+}
+.conveytabs input {
+  display: none;
+}
+.conveytabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+.conveytabs label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.conveytabs label[for*="1"]:before {
+  content: "\f299";
+}
+
+.conveytabs label[for*="2"]:before {
+  content: "\f2ab";
+}
+
+.conveytabs label[for*="3"]:before {
+  content: "\f041";
+}
+
+.conveytabs label[for*="4"]:before {
+  content: "\f08a";
+}
+.conveytabs label[for*="5"]:before {
+  content: "\f145";
+}
+
+.conveytabs label:hover {
+  color: #8e44ad;
+  cursor: pointer;
+}
+
+.conveytabs input:checked + label {
+  color: #8e44ad;
+  border: 1px solid #8e44ad;
+  border-top: 2px solid 8e44ad;
+  border-bottom: 1px solid #8e44ad;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .conveytabs label {
+    font-size: 0;
+  }
+
+  .conveytabs label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .conveytabs label {
+    padding: 15px;
+  }
+}

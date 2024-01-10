@@ -1,0 +1,436 @@
+/* testing */
+
+.flex-media-test {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  width: 80%;
+}
+
+/* Media card post cssdesign */
+.media-post-card {
+  width: 370px;
+  background: lightgrey;
+  background-color: rgb(24 27 32);
+  border: 1px solid rgb(84 90 106);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 3rem;
+}
+
+.media-avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  background-image: linear-gradient(to top left, blueviolet, rgb(73, 31, 112));
+}
+
+.media-title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.35s ease-in;
+}
+
+.media-title:hover {
+  text-decoration: underline blueviolet;
+}
+
+.datetime {
+  font-size: 12px;
+  color: rgb(168 179 207);
+  margin: 10px 0;
+}
+
+.image-preview {
+  flex: 1;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: blueviolet;
+  background-image: linear-gradient(to top left, blueviolet, rgb(73, 31, 112));
+  margin-bottom: 4px;
+}
+
+.comment-like {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.comment-like span {
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  padding: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.15s ease;
+}
+
+.comment-like span:hover {
+  background-color: rgba(137, 43, 226, 0.096);
+}
+
+.comment-like span svg {
+  fill: rgb(255, 255, 255);
+  margin-right: 2px;
+}
+
+/* Media card post cssdesign */
+
+/* Faq design */
+
+.faq-section {
+  max-width: 760px;
+  margin: 2rem 9rem;
+  align-items: center;
+}
+
+.faq-section header {
+  margin-bottom: 70px;
+}
+
+.faq-section header > p {
+  font-size: 22px;
+  color: #aeb9c6;
+}
+
+.faq-section h2 {
+  font-size: 52px;
+  color: #f4f4f6;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.faq-section details {
+  cursor: pointer;
+}
+
+.faq-section summary:focus-visible {
+  outline: 2px solid orange;
+  outline-offset: 8px;
+  border-radius: 4px;
+}
+
+.faq-section h4 {
+  width: 760px;
+}
+
+.faq-section summary {
+  font-size: 20px;
+  color: #f4f4f6;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.faq-section summary::marker {
+  display: none;
+  content: "";
+}
+
+.faq-section span {
+  margin-top: 4px;
+  margin-right: 3rem;
+  color: #f4f4f6;
+}
+
+.faq-section details > p {
+  max-width: 650px;
+  color: #aeb9c6;
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.1px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.faq-section hr {
+  color: #313133;
+  margin-block: 20px;
+}
+
+/* Faq design */
+
+/* Events css design for media route */
+
+main {
+  margin: 25px 40px;
+  font-size: 13px;
+}
+
+main .main-content .links {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+main .main-content .links ul {
+  padding: 3px 10px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+main .main-content .links ul:hover,
+main .main-content .links ul.selected {
+  background-color: #343434;
+  border-radius: 3px;
+}
+
+main .main-content .conferences {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-content .conferences .conference {
+  padding: 15px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .main-content .conferences .conference:last-child {
+  border-bottom: none;
+}
+
+main .main-content .conferences .conference .time {
+  font-size: 10px;
+}
+
+main .main-content .conferences .conference .time span {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+main .main-content .conferences .conference h5 {
+  margin: 10px 0;
+}
+
+main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main .content .main-content {
+  width: 50%;
+}
+
+main .content .side-content {
+  width: 35%;
+  padding: 20px 15px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  margin-top: 8rem;
+}
+
+main .content .side-content h3 {
+  font-size: 14px;
+  margin: 10px 15px;
+}
+
+main .content .side-content h5 i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+main .content .side-content .department {
+  padding: 15px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+main .content .side-content .department:hover {
+  background-color: #343434;
+  color: #f2f2f2;
+  border-radius: 3px;
+}
+
+main .content .side-content .department h5 {
+  font-size: 12px;
+  margin: 0;
+}
+
+main .content .side-content .department p {
+  font-size: 10px;
+  margin: 5px 0;
+  width: 90%;
+}
+/* For mobile device */
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+  main .content {
+    flex-direction: column;
+  }
+  main .content .main-content {
+    width: 90%;
+  }
+  main .content .side-content {
+    width: 80%;
+  }
+}
+
+/* Events design */
+
+/* Community css design */
+
+.com-container {
+  width: 100%;
+  background-color: #252b2d;
+  padding: 60px 30px;
+  border-radius: 7px;
+}
+
+.com-container .com-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+
+.com-container .com-content .com-profiles .com-profile {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  width: 100%;
+}
+
+.com-container .com-content .com-profiles .com-profile .profile-details {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.com-container
+  .com-content
+  .com-profiles
+  .com-profile
+  .profile-details
+  .com-profile-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.com-container .com-content .trending-creators {
+  width: 45%;
+  min-height: 300px;
+  background-color: #dae0e2;
+  border-radius: 7px;
+  padding: 45px 30px;
+}
+
+.com-container .com-content .account-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.com-container .com-content .account-details .premium-account,
+.com-container .com-content .account-details .com-post {
+  background-color: #dae0e2;
+  border-radius: 7px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+.com-container .com-content .account-details .com-post .com-header {
+  text-align: center;
+}
+
+.com-container .com-content .account-details .com-post p {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 40px;
+  color: red;
+}
+
+.com-container .com-content .account-details .com-post .com-btn {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.com-container .com-content .account-details .premium-account .com-header,
+.com-container .com-content .account-details .com-post .com-header {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  margin-bottom: 15px;
+}
+
+.com-container
+  .com-content
+  .account-details
+  .premium-account
+  .premium.com-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.com-container
+  .com-content
+  .account-details
+  .premium-account
+  .premium.com-content
+  > div {
+  width: 60%;
+  font-size: 14px;
+}
+
+.com-container .com-content .trending-creators .com-header {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.75px;
+}
+
+.com-container .com-content .trending-creators .com-profiles .com-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.com-container
+  .com-content
+  .trending-creators
+  .com-profiles
+  .com-profile
+  .com-btn {
+  float: right;
+}
+
+.com-container .com-content .account-details {
+  width: 45%;
+}
+
+/* UTILITY CLASSES  */
+.com-btn {
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #a6abac;
+  padding: 6px 14px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #a6abac;
+  cursor: pointer;
+  transition: background-color 300ms, color 300ms;
+}
+
+.com-btn:hover,
+.com-btn.highlighted {
+  background-color: #616c6f;
+  color: white;
+}
+
+/* Community css design */

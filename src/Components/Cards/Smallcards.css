@@ -1,0 +1,564 @@
+/* small Card 1 Series facts small card design */
+
+.facts-card p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+}
+
+.facts-card p.facts-small {
+  font-size: 14px;
+}
+
+.facts-go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.facts-go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.facts-card1 {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.facts-card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #00838d;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(3);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s ease-out;
+}
+
+.facts-card1:hover:before {
+  transform: scale(21);
+}
+
+.facts-card1:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.facts-card1:hover h3 {
+  transition: all 0.9s ease-out;
+  color: #fff;
+}
+
+/*small card 1 Series facts small card design */
+
+/* Small card 2 tags card design on hover more info */
+
+/* Tags card design */
+
+.grid-tag-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin: 4rem 0;
+}
+
+.tag-card {
+  width: auto;
+  min-width: 3rem;
+  height: auto;
+  margin: 1rem 2rem;
+  border-radius: 20px;
+  background: #000030;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #b1deba;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.tag-card-details {
+  color: rgb(255, 255, 255);
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.tag-card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #221408;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.tag-card-button a {
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+}
+.tag-text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.tag-text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.tag-card:hover {
+  border-color: #00ff7b;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.tag-card:hover .tag-card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+@media (max-width: 960px) {
+  .grid-tag-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-tag-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 420px) {
+  .grid-tag-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tagscard design */
+
+/* Small card 2 tags card design on hover more info */
+
+
+/* Small card 3 design with data and aeero button */
+
+
+.u2-card {
+    --border-radius: 0.75rem;
+    --primary-color: #45f7ee;
+    --secondary-color: #ffffff;
+    width: 250px;
+    font-family: "Arial";
+    padding: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #23234a;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+  }
+/*   
+  .u2-card > * + * {
+    margin-top: 1.1em;
+  } */
+  
+  .u2-card .u2-card__content {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+  }
+  
+  .u2-card .u2-card__title {
+    /* padding: 0; */
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  
+  .u2-card .u2-card__date {
+    color: #d3436c;
+    font-size: 0.8rem;
+  }
+  
+  .u2-card .u2-card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .u2-card svg {
+    transition: 0.2s;
+  }
+  
+  /* hover */
+  .u2-card:hover .u2-card__title {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .u2-card:hover .u2-card__arrow {
+    background: #111;
+  }
+  
+  .u2-card:hover .u2-card__arrow svg {
+    transform: translateX(3px);
+  }
+/* Small card 3 design with data and aeero button */
+
+
+/* Card 4 */
+.u3-container {
+    margin: 1.3rem;
+  }
+  
+  .u3-container .u3-box {
+    width: 11.875em;
+    height: 15.875em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+    transition: all ease .3s;
+  }
+  
+  .u3-container .u3-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .u3-container .u3-box .u3-title {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: .1em
+  }
+  
+  .u3-container .u3-box div strong {
+    display: block;
+    margin: .5rem;
+  }
+  
+  .u3-container .u3-box div p {
+    margin: 0;
+    font-size: .9em;
+    font-weight: 300;
+    letter-spacing: .1em;
+  }
+  
+  .u3-container .u3-box div span {
+    font-size: .7rem;
+    font-weight: 300;
+  }
+  
+  .u3-container .u3-box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: .2rem;
+  }
+  
+  .u3-container .u3-box:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+  
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background:rgba(175, 160, 158, 0.3);
+  border-radius:2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(255, 99, 71, .9);
+  border-radius:2px;
+}
+/* Card 4 */
+
+/* card 5 */
+.u9-card {
+    margin: 1rem;
+    width: auto;
+    max-width: 35rem;
+    min-width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    color: black;
+  }
+  
+  .u9-content {
+    padding: 1.1rem;
+  }
+  
+  .u9-title {
+    color: #111827;
+    font-size: 1.7rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .u9-content p {
+    margin-top: 0.5rem;
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  
+  .u9-action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563eb;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  .u9-action:hover {
+    color: #111827;
+  }
+  
+  .u9-action span {
+    transition: 0.3s ease;
+  }
+  
+  .u9-action:hover span {
+    transform: translateX(4px);
+  }
+  
+/* card 5 */
+
+/* Card 6 */
+
+/* Profile post css design */
+
+.task {
+    position: relative;
+    color: #2e2e2f;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+    border: 3px dashed transparent;
+    max-width: 350px;
+    margin: 3rem;
+  }
+  
+  .task:hover {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-color: rgba(162, 179, 207, 0.2) !important;
+  }
+  
+  .task p {
+    font-size: 15px;
+    margin: 1.2rem 0;
+    white-space: normal;
+  }
+  
+  .tag {
+    border-radius: 100px;
+    padding: 4px 13px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #1389eb;
+  }
+  
+  .tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options {
+    background: transparent;
+    border: 0;
+    color: #c4cad3;
+    font-size: 17px;
+  }
+  
+  .options svg {
+    fill: #9fa4aa;
+    width: 20px;
+  }
+  
+  .stats {
+    position: relative;
+    width: 100%;
+    color: #9fa4aa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .stats div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .stats svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+  }
+  
+  .viewer span {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(28, 117, 219);
+    margin-right: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+  }
+  
+  .viewer span svg {
+    stroke: #fff;
+  }
+  
+  /* Profile post css design */
+/* Card 6 */
+
+
+/* Card 7 */
+
+.u4-card {
+    width: 190px;
+    height: 254px;
+    margin-left: 4rem;
+    background: #d9f0f1;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+   }
+   
+   .u4-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+   }
+   
+   /*Image*/
+   .u4-card-avatar {
+    --size: 60px;
+    background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+   }
+   
+   
+   /*Card footer*/
+   .u4-card-social {
+    transform: translateY(200%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
+   }
+   
+   .u4-card-social__item {
+    list-style: none;
+   }
+   
+   .u4-card-social__item svg {
+    display: block;
+    height: 18px;
+    width: 18px;
+    fill: #0c08eb;
+    cursor: pointer;
+    transition: fill 0.2s ease ,transform 0.2s ease;
+   }
+   
+   /*Text*/
+   .u4-card-title {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2rem;
+   }
+   
+   .u4-card-subtitle {
+    color: #859ba8;
+    font-size: 0.8em;
+   }
+   
+   /*Hover*/
+   .u4-card:hover {
+    box-shadow: 0 8px 50px #23232333;
+   }
+   
+   .u4-card:hover .u4-card-info {
+    transform: translateY(-5%);
+   }
+   
+   .u4-card:hover .u4-card-social {
+    transform: translateY(100%);
+    opacity: 1;
+   }
+   
+   .u4-card-social__item svg:hover {
+    fill: #232323;
+    transform: scale(1.1);
+   }
+   
+   .u4-card-avatar:hover {
+    transform: scale(1.1);
+   }
+/* Card 7 */

@@ -1,0 +1,479 @@
+/* blog card 1 hover full color linear gredient */
+.u6-card {
+  position: relative;
+  display: flex;
+  margin: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.u6-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.u6-content .u6-heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.u6-content .u6-para {
+  line-height: 1.5;
+}
+
+.u6-content .u6-btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.u6-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.u6-card:hover::before {
+  height: 100%;
+}
+
+.u6-card:hover {
+  box-shadow: none;
+}
+
+.u6-card:hover .u6-btn {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.u6-content .u6-btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.u6-content .u6-btn:active {
+  box-shadow: none;
+}
+
+/* blog card 1 hover full color linear gredient */
+
+/* blog card 2 */
+
+.crd-details h3 {
+  font-family: "Song Myung", serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(253, 101, 101);
+}
+
+.crd-details h3:after {
+  content: "";
+  width: 100px;
+  background-color: #03d6e9;
+  width: 100px;
+  height: 3px;
+  display: block;
+  margin-top: 8px;
+}
+
+#base li {
+  background-color: #000000;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border: #e5e5e5 1px solid;
+  border-radius: 5px;
+  max-width: 700px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-gap: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crd-details {
+  width: 90%;
+  color: rgb(255, 255, 255);
+
+  display: grid;
+
+  align-items: center;
+}
+
+.readmore {
+  background-color: red;
+  width: 30%;
+  position: relative;
+  bottom: 9px;
+  left: 9px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff6a13 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #000000;
+  transition: 0.5s ease-in;
+  border: #bada55 solid 1px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.readmore:hover {
+  background-position: left bottom;
+  color: #000000;
+}
+
+.readmore span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* blog card 2 */
+
+/* blog card 3 */
+/* Blog simple card design */
+
+:root {
+  --color1: #ffffff;
+  --color2: #25661e;
+  --color1-t5: color-mix(in srgb, var(--color1), transparent 5%);
+  --color1-t10: color-mix(in srgb, var(--color1), transparent 10%);
+  --color1-t20: color-mix(in srgb, var(--color1), transparent 20%);
+  --color1-t30: color-mix(in srgb, var(--color1), transparent 30%);
+  --color1-t40: color-mix(in srgb, var(--color1), transparent 40%);
+}
+
+.simple-card {
+  max-width: 350px;
+}
+.simple-card-title {
+  font-size: 30px;
+  color: var(--color1-t20);
+  font-size: clamp(1.2rem, 8vw, 25px);
+}
+.simple-card-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.simple-card .simple-card-description {
+  color: var(--color1-t5);
+}
+.simple-card-action {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--color1-t40);
+}
+.simple-card-action .action-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.4s ease;
+}
+.simple-card-action .action-row:hover {
+  color: var(--color2);
+}
+/* IGNORE - for codepen preview on profile */
+@media (max-width: 666px) and (max-height: 380px) {
+  .simple-card {
+    max-width: 150px;
+  }
+}
+
+/* Blog simple card design */
+/* blog card 3 */
+
+/* blogs card 4 */
+
+.post_section {
+  /* position: absolute; */
+  width: 450px;
+  padding: 15px;
+  margin: 20px 13px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  background: linear-gradient(4deg, #9cb7cc 0%, #132928 100%);
+}
+.post_section:hover {
+  transform: scale(0.9);
+  box-shadow: 1px 1px 1em 4px rgb(177, 110, 142);
+}
+.post_section .img {
+  height: 12em;
+}
+.post_section h2 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.post_section p {
+  text-align: justify;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: black;
+}
+.post_section button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: rgb(180, 171, 45);
+}
+.post_section button:hover {
+  background-color: rgb(127, 121, 53);
+}
+
+/* blogs card 4 */
+
+/* blog card 5 */
+#card7-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.card7-container {
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.card7-content {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.content-img {
+  flex: 1;
+}
+
+.content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-text {
+  flex: 1.5;
+  padding: 4rem;
+}
+
+.content-text .content-title {
+  font-family: "Playfair Display", serif;
+  color: #222;
+  font-size: 4rem;
+}
+
+.content-text .content-subtitle {
+  font-size: 2.56rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444;
+  margin: 0.5rem 0 2rem;
+}
+
+.content-text .content-paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.content-text .btn-7 {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  border: 1px solid #444;
+  border-radius: 3px;
+}
+.btn-7:hover {
+  background: #000;
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .content-text {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .content-text .content-paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .content-text .content-subtitle {
+    font-size: 2rem;
+  }
+
+  .content-text .content-title {
+    font-size: 3.2rem;
+  }
+
+  .content-text .btn-7 {
+    padding: 1rem 1.56rem;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .card7-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-text .content-paragraph {
+    text-align: justify;
+  }
+
+  .content-img {
+    height: 350px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .content-text .content-paragraph {
+    font-size: 1.2rem;
+  }
+  .content-text .content-subtitle {
+    font-size: 1.72rem;
+  }
+
+  .content-text .content-title {
+    font-size: 2.7rem;
+  }
+}
+/* blog card 5 */
+
+/* blog card 6 */
+
+.ucard {
+  position: relative;
+  max-width: 55rem;
+  padding: 9px;
+  margin: 3rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #c4afaf;
+  border-radius: 35px;
+  color: black;
+  max-height: 30rem;
+  overflow-y: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.ucard-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ucard-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-width: 190px;
+  height: 254px;
+  background-color: #d44f4f;
+  border-radius: 30px;
+  /* Content style */
+  font-size: 30px;
+  font-weight: 900;
+  color: #c7c4c4;
+  text-align: center;
+  font-family: monospace;
+}
+.ucard-desc {
+  padding: 1.5rem;
+}
+/* blog card 6 */
+
+/* blog card 7 */
+.u7-card {
+  width: 352px;
+  height: 345px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.u7-img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url("../Image/black_hole.jpg");
+  background-size: cover;
+}
+
+.u7-text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.u7-text .u7-h3 {
+  font-family: "Lucida Sans" sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.u7-text .u7-p {
+  font-family: "Lucida Sans" sans-serif;
+  color: #999999;
+  font-size: 13px;
+}
+
+.u7-card:hover {
+  box-shadow: 1px 1px 12px #906969, -1px -1px 3px #926666;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.u7-btn {
+  background-color: #000000;
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 9px;
+}
+
+/* blog card 7 */

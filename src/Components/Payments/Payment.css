@@ -1,0 +1,165 @@
+
+
+
+/* Pricing details  */
+.price_cards_wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  align-items: center;
+}
+
+.pricing_card {
+  margin: 16px;
+  color: #ffffff;
+  padding: 32px;
+  background-color: #264653;
+  min-height: 320px;
+  max-width: 260px;
+  border-radius: 8px;
+  box-shadow: 1px 10px 20px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.price_title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 16px;
+
+}
+
+.plan_description {
+  margin-bottom: 48px;
+  color: rgb(144, 154, 164);
+  line-height: 140%;
+  letter-spacing: .25px;
+}
+
+.price {
+  font-size: 52px;
+  font-weight: bold;
+  margin: 4px;
+  color: black;
+}
+
+.price_description {
+  font-size: 12px;
+  color: lightslategray;
+  margin-bottom: 16px;
+}
+
+.price_cta button {
+  background-color: teal;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(238, 235, 243);
+}
+
+.price_cta button:hover {
+  box-shadow: 2px 4px 10px rgba(0,0,0,.3);
+  transition: 200ms ease;
+  cursor: pointer;
+}
+.price_cta p{
+  padding: 1rem;
+  background-color: rgb(85, 85, 160);
+  border-radius: 8px;
+  
+}
+.price_cta {
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .price_cards_wrapper{
+    flex-direction: column;
+
+  }
+}
+
+
+/* Pricing2 css */
+
+
+
+
+.packages {
+  margin: 20px;
+  width: 300px;
+  padding-bottom: 1.5em;
+  height: 100%;
+  background-color: #2e443b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(30, 35, 33, 1), 0 15px 12px rgba(30, 35, 33, 0.2);
+  flex-wrap: wrap;
+  color: #f4f4f4;
+}
+
+
+.text1,
+.text2{
+    color: #fff;
+}
+
+.list li {
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 1px solid #f4f4f4;
+  padding-inline-start: 0;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.first {
+  margin-top: 40px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.list {
+  width: 80%;
+}
+
+
+
+
+.button {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin: 15px 15px;
+  border-radius: 50px;
+  color: #f4f4f4;
+  transition: all 0.3s ease 0s;
+
+  background-color: #00cc99;
+  box-shadow: 0 0 10px 0 #00cc99 inset, 0 0 20px 2px #00cc99;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+.package-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Pricing2 css */
