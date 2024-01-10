@@ -28,7 +28,6 @@ function App() {
    <Navbar1 />
       <Navbar4 />
 
-    <h1>Aman you are gay<h1>
 
       <Routes>
         <Route path="/" element={<Home />} />
