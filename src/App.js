@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from '@vercel/analytics/react';
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./Components/Pages/Home";
@@ -22,9 +23,13 @@ import Testing from "./Components/Testing/Testing";
 import Parasnath from "./Components/Parasnath/Parasnath";
 import Lost from "./Components/Testing/Lost";
 
+
 function App() {
   return (
     <>
+
+          <Analytics />
+
    <Navbar1 />
       <Navbar4 />
 
