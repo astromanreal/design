@@ -1,5 +1,5 @@
 import "./App.css";
-import { Analytics } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./Components/Pages/Home";
