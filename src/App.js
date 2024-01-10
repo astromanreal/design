@@ -26,34 +26,7 @@ function App() {
   return (
     <>
     <h1>Aman love Ashu<h1>
-    yes 
-      // <Navbar1 />
-      // <Navbar4 />
-
-      // <Routes>
-      //   <Route path="/" element={<Home />} />
-      //   <Route path="mission" element={<Missions />} />
-      //   <Route path="explore" element={<Explore />} />
-      //   <Route path="blog" element={<Blogs />} />
-      //   <Route path="media" element={<Media />} />
-      //   <Route path="about" element={<About />} />
-      //   <Route path="connect" element={<Connect />} />
-      //   <Route path="*" element={<Nothing />} />
-
-      //   <Route path="rocket" element={<Rocket />} />
-      //   <Route path="series" element={<Series />} />
-      //   <Route path="product" element={<Products />} />
-
-      //   <Route path="/payment" element={<Payment />} />
-      //   <Route path="/testing" element={<Testing />} />
-      //   <Route path="/lost" element={<Lost />} />
-      //   <Route path="/parasnath" element={<Parasnath />} />
-      // </Routes>
-
-      // <a className="back-to-top" href="#top">
-      //   <button className="back-to-top-btn">Back to top</button>
-      // </a>
-      // <Footer />
+  
     
     </>
   );
