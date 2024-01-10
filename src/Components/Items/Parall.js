@@ -5,7 +5,7 @@ export default function Parall() {
   return (
     <>
       <Parallcontainer
-        title="Yashwant pandey is my bro"
+        title="Yashwant pandey is my bro."
         body="a great place to explore our universe and our place in it.."
       />
 
