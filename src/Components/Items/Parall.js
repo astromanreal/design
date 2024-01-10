@@ -5,7 +5,7 @@ export default function Parall() {
   return (
     <>
       <Parallcontainer
-        title="Aman is gay"
+        title="Just explore the design"
         body="a great place to explore our universe and our place in it.."
       />
 
