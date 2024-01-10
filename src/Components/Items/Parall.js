@@ -5,7 +5,7 @@ export default function Parall() {
   return (
     <>
       <Parallcontainer
-        title="Space xploration"
+        title="Space xploration()"
         body="a great place to explore our universe and our place in it.."
       />
 
@@ -46,10 +46,6 @@ export default function Parall() {
           </div>
         </div>
       </div>
-
-      
-
-    
     </>
   );
 }
